@@ -2,9 +2,9 @@
 using namespace std;
 void pattern1(int n)
 {
-    for (int row = 0; row < n; row++)
+    for (int row = 1; row <= n; row++)
     {
-        for (int col = 0; col < n; col++)
+        for (int col = 1; col <= n; col++)
         {
             cout << "* ";
         }
@@ -13,9 +13,9 @@ void pattern1(int n)
 }
 void pattern2(int n)
 {
-    for (int row = 0; row < n; row++)
+    for (int row = 1; row <= n; row++)
     {
-        for (int col = 0; col <= row; col++)
+        for (int col = 1; col <= row + 1; col++)
         {
             cout << "* ";
         }
