@@ -66,7 +66,21 @@ void pattern6(int n)
         cout << "\n";
     }
 }
-
+void pattern7(int n)
+{
+    for (int row = 1; row <= n; row++)
+    {
+        for (int space = 1; space <= n - row; space++)
+        {
+            cout << " ";
+        }
+        for (int star = 1; star <= 2 * row - 1; star++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+}
 int main()
 {
     int test = 2;
@@ -75,6 +89,6 @@ int main()
         int num;
         cout << "Enter rows: ";
         cin >> num;
-        pattern6(num);
+        pattern7(num);
     }
 }
