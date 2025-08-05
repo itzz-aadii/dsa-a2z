@@ -100,6 +100,21 @@ void pattern9(int n)
 {
     // use pattern 7 & 8
 }
+void pattern10(int n)
+{
+    for (int row = 1; row <= 2 * n - 1; row++)
+    {
+        for (int star = 1; star <= n; star++)
+        {
+            cout << row*'star';
+        }
+        for (int star = 1; star < n; star++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+}
 int main()
 {
     int test = 2;
@@ -108,7 +123,6 @@ int main()
         int num;
         cout << "Enter rows: ";
         cin >> num;
-        pattern7(num);
-        pattern8(num);
+        pattern10(num);
     }
 }
